@@ -1,0 +1,650 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    /* outline: 1px solid red; */
+}
+
+/*********************************** barre de nav debut ***************************/
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+nav {
+    background-color: rgb(254, 196, 5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 120px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50px;
+}
+.cote {
+    display: flex;
+}
+.ture p {
+    color: white;
+    padding: 10px;
+
+}
+.ture p a {
+    color: white;
+    text-decoration: none;
+
+}
+.clair span {
+    color: white;
+    padding: 15px 10px 0 0;
+}
+/*********************************** barre de nav fin ***************************/
+/*********************************** section 1 debut ***************************/
+.section1 {
+    background-image: url(Images/téléchargement.jpeg);
+    background-size: cover;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.mi {
+    color: orange;
+}
+.petit {
+    /* background-color: rgb(154, 12, 12); */
+    background-color: white;
+    width: 60%;
+    height: 500px;
+    margin-top: 650px;
+}
+.pe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+}
+.section1 img {
+    border-radius: 300px;
+    position: absolute;
+    margin-top: 150px;
+    width: 250px;
+    height: 250px;
+}
+.tite h5 {
+    color: rgb(255, 196, 0);
+    font-size: 30px;
+}
+.tite h2 {
+    font-size: 50px;
+}
+.tite ul {
+    /* font-size: 20px; */
+    list-style-type: none;
+    text-align: center;
+}
+.tite li {
+    padding: 7px;
+
+}
+.vire {
+    background-color: purple;
+    border-radius: 250px;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.ge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.char {
+    background-color: rgb(254, 196, 5);
+    width: 10%;
+    height: 50px;
+    color: white;
+    padding: 10px;
+}
+/*********************************** section 1 fin ***************************/
+/*********************************** section 2 debut ***************************/
+.section2 {
+    margin-top: 400px;
+
+}
+.sous {
+    background-color: rgb(254, 196, 5);
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+    margin-left: 170px;
+}
+.section2 h2 {
+    font-weight: bolder;
+    font-size: 40px;
+    margin-left: 170px;
+    margin-top: 5px;
+
+}
+.section2 h4 {
+    margin-left: 170px;
+    margin-top: 5px;
+    color: grey;
+    font-size: 13px;
+}  
+.section2 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.section2 li {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.photo {
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+
+}
+
+.photo div img {
+    width: 100%;
+    height: 100%;
+}
+.im1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.im2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.im3 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+.im6 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+.im7 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
+
+}
+.im8 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+}
+
+.im9 {
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+/*********************************** section 2 fin ***************************/
+/*********************************** section 3 debut ***************************/
+/* circle progress debut */
+.all {
+    display: flex;
+
+}
+.circle-wrap {
+    display: grid;
+    grid-template-columns: repeat(1, 160px);
+    grid-gap: 80px;
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+    background: #d9d7da;
+    border-radius: 50%;
+}
+
+.circle-wrap .circle .mask,
+.circle-wrap .circle .fill-1,
+.circle-wrap .circle .fill-2,
+.circle-wrap .circle .fill-3 {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+
+}
+
+.circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+}
+.circle-wrap .inside-circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: white;
+    line-height: 55px;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #212020;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 1em;
+
+}
+
+/* color animation */
+
+.mask .fill-1 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: rgb(254, 196, 5);
+
+}
+
+.mask.full-1,
+.circle .fill-1 {
+    animation: fill-1 ease-in-out 3s;
+    transform: rotate(173deg);
+
+}
+@keyframes fill-1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+
+        transform: rotate(173deg);
+
+    }
+
+}
+
+/* 2nd bar */
+
+.mask .fill-2 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: rgb(254, 196, 5);
+}
+
+.mask.full-2,
+.circle .fill-2 {
+    animation: fill-2 ease-in-out 3s;
+    transform: rotate(137deg);
+
+}
+@keyframes fill-2 {
+    0% {
+
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+
+        transform: rotate(137deg);
+
+    }
+
+}
+
+/* 3rd progress bar */
+.mask .fill-3 {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: rgb(254, 196, 5);
+
+}
+.mask.full-3,
+.circle .fill-3 {
+    animation: fill-3 ease-in-out 3s;
+    transform: rotate(115deg);
+
+}
+@keyframes fill-3 {
+    0% {
+
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+
+        transform: rotate(115deg);
+
+    }
+
+}
+
+/* circle progress fin */
+
+.section3 {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.tour {
+    background-color: rgb(254, 196, 5);
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+
+}
+
+.droite {
+    padding: 100px 0 100px 0;
+
+}
+
+
+
+.para p {
+
+    font-size: 22px;
+
+    color: rgb(145, 145, 142);
+
+}
+
+.gauche {
+    padding: 100px;
+
+}
+.gauche h2 {
+    padding: 10px 0 10px 0;
+    font-size: 30px;
+}
+.gauche h4 {
+    font-size: 13px;
+    color: rgb(145, 145, 142);
+}
+
+/*********************************** section 3 fin ***************************/
+/*********************************** section 4 debut ***************************/
+
+.cou {
+    background-color: rgb(254, 196, 5);
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.section4 {
+    background-color: rgb(66, 19, 98);
+    display: flex;
+    justify-content: space-around;
+}
+
+.ri p {
+    color: white;
+    font-size: 20px;
+}
+
+.ri h4 {
+    color: rgb(254, 196, 5);
+}
+.ri h3 {
+    color: white;
+
+}
+.le {
+    padding: 100px;
+}
+
+.le h2 {
+    padding: 10px 0 10px 0;
+    font-size: 30px;
+    color: white;
+}
+.le h4 {
+    font-size: 13px;
+    color: rgb(145, 145, 142);
+}
+.droite {
+    padding: 100px 0 100px 0;
+
+}
+
+.ri {
+    padding: 100px 0 100px 0;
+
+}
+
+/*********************************** section 4 fin ***************************/
+/*********************************** section 5 debut ***************************/
+.tir {
+    background-color: rgb(254, 196, 5);
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+}
+.section5 {
+    display: flex;
+    justify-content: space-around;
+}
+.texte h4 {
+    color: rgb(254, 196, 5);
+}
+.partir h4 {
+    font-size: 12px;
+    color: rgb(145, 145, 142);
+}
+.verti {
+    background-color: rgb(145, 145, 142);
+    height: 580px;
+    width: 2px;
+    border-radius: 15px;
+    margin: 100px 60px;
+}
+.pre {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(247, 214, 105);
+    border-radius: 20px;
+    margin-left: -20px;
+    margin-bottom: 150px;
+    position: relative;
+
+}
+.deux {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(239, 187, 17);
+    border-radius: 10px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+.manger {
+    display: flex;
+}
+.partir {
+    padding: 100
+}
+.texte {
+    padding-top: 100px;
+
+}
+.texte p {
+    color: rgb(145, 145, 142);
+}
+
+.texte h3 {
+    font-size: 23px;
+    color: rgb(65, 64, 64);
+}
+.partir h2 {
+    font-size: 35px;
+
+}
+/*********************************** section 5 fin ***************************/
+/*********************************** section 6 debut ***************************/
+.section6 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(255, 196, 0);
+    height: 200px;
+}
+
+.couper {
+    display: flex;
+}
+.fou p {
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+
+}
+.num {
+    color: white;
+    font-size: 60px;
+}
+/*********************************** section 6 fin ***************************/
+footer {
+    background-color: rgb(66, 19, 98);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+@media only screen and (max-width: 600px) {
+/* barre nav */
+    nav {
+
+        height: 200px;
+
+        margin: auto;
+
+    }
+/* section1 */
+    .section1 img {
+        width: 150px;
+        height: 150px;
+    }
+   .tite h5 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .tite h2 { 
+        font-size: 30px;
+
+        text-align: center;
+
+    }
+/* section2 */
+    .photo {
+        display: grid;
+        grid-template-columns: 90px;
+    }
+    .section2 h2 {
+        font-size: 20px;
+    }
+    .section2 h4 {
+        font-size: 10px;
+    }
+    .section2 li {
+        padding: 10px; 
+        font-size: 10px;
+    }
+    .sous {
+        width: 70px;
+        height: 10px;
+    }
+    /* section3 */
+    .section3 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    .all {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .circle-wrap {
+        margin-top: 20px;
+        margin-left: 90px;
+    }
+    .para p {
+        font-size: 15px;
+        padding: 0px 50px 0px 50px;
+    }
+    .gauche {
+        padding: 50px 0px 0px 100px;
+
+    }
+    /* section4 */
+    .section4 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+    }
+    .ri p {
+        font-size: 15px;
+        padding: 0px 50px 0px 50px;
+
+    }
+    .ri h4 {
+        font-size: 15px;
+        padding: 0px 50px 0px 50px;
+    }
+    .ri h3 {
+        font-size: 15px;
+        padding: 0px 50px 0px 50px;
+    }
+
+    .le {
+        padding: 100px 0px 0px 80px;
+
+    }
+    .le h2 {
+        font-size: 18px;
+    }
+    /* section5 */
+    .section5 {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+
+    }
+    .pre {
+        margin-bottom: 350px;
+    }
+    .verti {
+        height: 1110px;
+
+    }
+
+    /* section6 */
+    .section6 {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+    }
+
+}
